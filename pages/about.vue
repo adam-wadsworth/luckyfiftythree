@@ -13,14 +13,14 @@ export default {
       ip: null
     }
   },
+  mounted () {
+    this.fetchSomething()
+  },
   methods: {
     async fetchSomething () {
       const ip = await this.$axios.$get('http://luckyfiftythree.co.uk/admin/api/collections/get/projects?token=b5f2f0beacea5dd2af67f766a11ad4')
       this.ip = ip
     }
-  },
-  mounted () {
-    this.fetchSomething()
   }
 }
 </script>

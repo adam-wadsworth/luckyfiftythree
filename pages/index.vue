@@ -7,27 +7,15 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head: {
+    title: 'Lucky53°'
+  }
+}
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-svg {
-  width:100%;
-  max-width:800px;
-  height:auto;
-}
+  .container {
+    @apply min-h-screen flex justify-center items-center text-center mx-auto p-4;
+  }
 </style>
